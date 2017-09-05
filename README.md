@@ -25,3 +25,48 @@ Candidate Algorithms
 Split data between training and test
 
 **scikit-lean** will be used for training functions
+
+
+#### Confusion Matrix
+The Confusion Matrix provides a matrix that compares the predicted natural results for diabetes. 
+The columns are the predicted values. The left column is predicted true. 
+The right column is predicted false. 
+Rows are the actual values, top row is actual true, bottom row is actual false. 
+
+
+    52 28 
+    33 118
+ 
+    TP FP       True-Positive   Flase-Positive
+    FN TN       Flase-Negitive  True-Negitive
+    
+    
+|     |      |
+|-------------------------------------------------------|-----------------------------------------------------------|
+| TP - Actual diabetes and predicted to be diabetes     | FP - Actual not diabetes but predicted to be diabetes     |
+| FN - Actual diabetes but predicted to be not diabetes | TN - Actual not diabetes and predicted not to be diabetes |
+
+
+    
+"Perfect" Classifier
+
+    80  0
+    0   151
+    
+### Random Forest
+Its an ensemble algroritm which uses binary decision trees
+
+Fits multiple trees with subsets fo data
+
+Averages tree results to improve performance and control overfitting
+
+
+*If accuracy is very high with Training data but not with Test data, then the algorithm has learned the training data too well.*
+
+### Fixing Overfitting
+Regulariation hyperparameter
+
+
+
+
+ 
